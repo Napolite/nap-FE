@@ -8,11 +8,18 @@ function Navbar() {
     <>
       <div>
         <div>
-          <div></div>
+          <img src={avatar} />
           <div>Napolite</div>
         </div>
-        <div></div>
-        <div></div>
+        <div>
+          <div>About</div>
+          <div>Projects</div>
+          <div>Blog</div>
+          <div>DAPP</div>
+        </div>
+        <div>
+          <div>Connect Wallet</div>
+        </div>
       </div>
     </>
   );
