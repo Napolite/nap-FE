@@ -6,7 +6,7 @@ import { avatar } from "@/assets";
 function Navbar() {
   return (
     <>
-      <div>
+      <div className="navbar-root">
         <div>
           <img src={avatar} />
           <div>Napolite</div>
