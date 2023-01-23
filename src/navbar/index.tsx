@@ -1,4 +1,6 @@
 import React from "react";
+
+import { connectWallet } from "@/actions";
 import "./index.css";
 
 import { avatar } from "@/assets";
@@ -17,8 +19,8 @@ function Navbar() {
           <div>Blog</div>
           <div>DAPP</div>
         </div>
-        <div>
-          <div>Connect Wallet</div>
+        <div className="connect-wallet-div">
+          <div className="connect-wallet">Connect Wallet</div>
         </div>
       </div>
     </>
