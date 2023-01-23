@@ -1,9 +1,9 @@
 const connectWallet = async () => {
+  let accounts:any;
   const { ethereum } = window;
 
-  const accounts = await ethereum.request({ method: "eth_requestAccounts" });
-  
-  return accounts[0]
+  return ethereum.request({ method: "eth_requestAccounts" }).then((res: any) => res);
+
 };
 
 export default connectWallet;
