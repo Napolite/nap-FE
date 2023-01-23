@@ -9,9 +9,6 @@ function App() {
 
   const connect = async () => {
     account === null ? setAccount(await connectWallet()) : null;
-    console.log(account);
-
-    console.log("a lot of stuff");
   };
 
   return (
