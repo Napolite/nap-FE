@@ -16,7 +16,7 @@ function App() {
 
   return (
     <div className="index">
-      <Navbar connectWallet={connect} />
+      <Navbar connectWallet={connect} account={account} />
     </div>
   );
 }

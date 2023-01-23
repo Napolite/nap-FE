@@ -5,7 +5,7 @@ import "./index.css";
 
 import { avatar } from "@/assets";
 
-function Navbar({ connectWallet }: any) {
+function Navbar({ connectWallet, account }: any) {
   return (
     <>
       <div className="navbar-root">
@@ -21,7 +21,7 @@ function Navbar({ connectWallet }: any) {
         </div>
         <div className="connect-wallet-div">
           <div className="connect-wallet" onClick={connectWallet}>
-            Connect Wallet
+            {account === null ? "Connect Wallet" : account[0]}
           </div>
         </div>
       </div>
