@@ -7,11 +7,11 @@ function Navbar() {
   return (
     <>
       <div className="navbar-root">
-        <div>
+        <div className="logo-div">
           <img src={avatar} />
           <div>Napolite</div>
         </div>
-        <div>
+        <div className="navbar-links">
           <div>About</div>
           <div>Projects</div>
           <div>Blog</div>
