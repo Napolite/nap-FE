@@ -21,7 +21,12 @@ function Navbar({ connectWallet, account }: any) {
         </div>
         <div className="connect-wallet-div">
           <div className="connect-wallet" onClick={connectWallet}>
-            {account === null ? "Connect Wallet" : account[0]}
+            {account === null
+              ? "Connect Wallet"
+              : `${account[0].substring(0, 4)}...${account[0].substring(
+                  38,
+                  42
+                )}`}
           </div>
         </div>
       </div>
