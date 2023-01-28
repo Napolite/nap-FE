@@ -7,7 +7,6 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  border-bottom: 1px black solid;
 }
 
 .navbar-root img {
@@ -26,14 +25,14 @@
   width: 20%;
   justify-content: center;
   font-size: 34px;
-  background: -webkit-linear-gradient(
+  /* background: -webkit-linear-gradient(
     right,
     rgb(236, 144, 144) 100%,
     rgba(25, 117, 236, 0.8)
   );
   -webkit-background-clip: text;
   background-clip: text;
-  -webkit-text-fill-color: transparent;
+  -webkit-text-fill-color: transparent; */
 }
 .logo-div div {
   width: 70%;
@@ -44,13 +43,16 @@
 }
 .navbar-links {
   display: flex;
-  width: 40%;
+  width: 60%;
   justify-content: space-around;
   font-size: 20px;
   color: rgb(37, 36, 36);
 }
 .connect-wallet-div {
+  /* background-color: red; */
   width: 20%;
+  display: flex;
+  justify-content: center;
 }
 .connect-wallet {
   color: white;
@@ -67,7 +69,7 @@
   );
 }
 .connect-wallet:hover {
-  animation: connect-wallet 0.5s forwards;
+  animation: connect-wallet 0.3s forwards;
 }
 
 @keyframes animateBG {

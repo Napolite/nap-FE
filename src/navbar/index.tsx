@@ -28,6 +28,28 @@ function Navbar({ connectWallet, account }: any) {
                   42
                 )}`}
           </div>
+          <div className="connect-modal">
+            <div>
+              <div>
+                <div>Account</div>
+                <div>X</div>
+              </div>
+              <div>
+                <div>
+                  <div>Account address</div>
+                  <div>copy icon</div>
+                </div>
+                <div>
+                  <div>Balance</div>
+                  <div>balance amount</div>
+                </div>
+                <div>
+                  <div>Receive</div>
+                  <div>Send</div>
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
       </div>
     </>
