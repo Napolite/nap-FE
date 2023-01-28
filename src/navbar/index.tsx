@@ -28,7 +28,7 @@ function Navbar({ connectWallet, account }: any) {
                   42
                 )}`}
           </div>
-          <div className="connect-modal">
+          {/* <div className="connect-modal">
             <div>
               <div>
                 <div>Account</div>
@@ -49,7 +49,7 @@ function Navbar({ connectWallet, account }: any) {
                 </div>
               </div>
             </div>
-          </div>
+          </div> */}
         </div>
       </div>
     </>
