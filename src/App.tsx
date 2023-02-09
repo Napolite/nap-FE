@@ -3,6 +3,7 @@ import reactLogo from "./assets/react.svg";
 import "./App.css";
 import Navbar from "@/navbar";
 import { connectWallet } from "./actions";
+import Home from "@/home";
 
 function App() {
   const [account, setAccount] = useState(null);
@@ -12,9 +13,14 @@ function App() {
   };
 
   return (
-    <div className="index">
-      <Navbar connectWallet={connect} account={account} />
-    </div>
+    <>
+      <div className="index">
+        <Navbar connectWallet={connect} account={account} />
+      </div>
+      <div>
+        <Home />
+      </div>
+    </>
   );
 }
 
