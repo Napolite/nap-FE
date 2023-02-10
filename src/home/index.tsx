@@ -8,21 +8,21 @@ import "./index.css";
 function Home() {
   return (
     <div className="home-root">
+      <div className="tabs">
+        <div>Intro</div>
+        <div>Bio</div>
+        <div>Experience</div>
+      </div>
       <div className="home-intro">
-        <div>
-          <div>Intro</div>
-          <div>Bio</div>
-          <div>Experience</div>
-        </div>
         <img src={avatar} />
-        <div>
+        <div className="intro">
           <div>Intro</div>
           <div>Hi</div>
           <div>I am Okon Emmanuel</div>
           <div>Frontend developer, Blockchain Developer, Web3 enthusiast </div>
           <div>Basically Beauty and the Blockchain</div>
         </div>
-        <div>
+        <div className="bio">
           <div>Bio</div>
           <div>
             I am a frontend developer majoring with the React Ecosystem and
@@ -37,7 +37,7 @@ function Home() {
             Rust(in view) and Assemblyscript.
           </div>
         </div>
-        <div>
+        <div className="experience">
           <div>Professional Experience</div>
           <div>
             I have worked in DeFi, EdTech, and Logistics Spanning a 2+ years
