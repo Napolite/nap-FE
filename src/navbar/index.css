@@ -2,7 +2,7 @@
   cursor: default;
 }
 .navbar-root {
-  width: 100vw;
+  max-width: 100vw;
   height: 70px;
   display: flex;
   justify-content: space-between;
