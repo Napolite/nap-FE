@@ -58,6 +58,8 @@
 @keyframes animateBGCOLOR {
   0% {
     padding: 3px 0px;
+    color: white;
+    font-weight: 600;
     background: -webkit-linear-gradient(
       right,
       rgb(236, 144, 144) 50%,
@@ -67,6 +69,8 @@
 
   100% {
     padding: 4px 2px;
+    color: white;
+    font-weight: 600;
     background: -webkit-linear-gradient(
       right,
       rgb(236, 144, 144) 10%,
