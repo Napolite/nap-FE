@@ -3,6 +3,15 @@
   src: url("../src/assets/fonts/Planetnv2.ttf");
 }
 
+@font-face {
+  font-family: Spatakus;
+  src: url("../src/assets/fonts/SparTakus.ttf");
+}
+
+body {
+  /* background-color: #121212; */
+}
+
 * {
   padding: 0;
   margin: 0;

@@ -16,11 +16,13 @@ function Home() {
       <div className="home-intro">
         <img src={avatar} />
         <div className="intro">
-          <div>Intro</div>
-          <div>Hi</div>
-          <div>I am Okon Emmanuel</div>
-          <div>Frontend developer, Blockchain Developer, Web3 enthusiast </div>
-          <div>Basically Beauty and the Blockchain</div>
+          <div className="title">Intro</div>
+          <div className="hi">Hi</div>
+          <div className="name">I am Okon Emmanuel</div>
+          <div className="profession">
+            Frontend developer, Blockchain Developer, Web3 enthusiast{" "}
+          </div>
+          <div className="prof2">Basically Beauty and the Blockchain</div>
         </div>
         <div className="bio">
           <div>Bio</div>

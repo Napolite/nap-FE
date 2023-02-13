@@ -33,6 +33,20 @@
   display: block;
 }
 
+.title {
+  display: block;
+  font-size: 24px;
+  font-family: Spatakus;
+  font-weight: bold;
+}
+
+.name,
+.hi,
+.profession,
+.prof2 {
+  display: none;
+}
+
 .bio {
   display: none;
 }
