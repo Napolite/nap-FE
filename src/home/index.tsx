@@ -22,7 +22,7 @@ function Home() {
           <div className="profession">
             Frontend developer, Blockchain Developer, Web3 enthusiast
           </div>
-          <div className="prof2">Basically Beauty and the Blockchain</div>
+          <div className="prof2">Basically, Beauty and the Blockchain</div>
         </div>
         <div className="bio">
           <div>Bio</div>
@@ -46,6 +46,9 @@ function Home() {
             career as a fronened developer and web3 engineer for several
             products, Including a DEX pricing oracle querying more than 10
             dexes, and the DAPP of this ecosystem
+          </div>
+          <div>
+            Download a copy of my resume <a>here</a>
           </div>
         </div>
       </div>

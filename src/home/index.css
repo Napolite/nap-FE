@@ -14,7 +14,7 @@
 
 .home-intro img {
   border-radius: 50%;
-  margin-top: -80px;
+  margin-top: -60px;
 }
 .tabs {
   display: flex;
@@ -35,6 +35,9 @@
   text-align: center;
   padding: 3px 0px;
   border-radius: 10px;
+  font-size: 12px;
+  font-family: Noto;
+  font-weight: 700;
 }
 
 .tabs div:hover {
