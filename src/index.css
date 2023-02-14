@@ -28,7 +28,7 @@ body {
   0% {
     background: -webkit-linear-gradient(
       right,
-      rgb(236, 144, 144) 100%,
+      rgb(65, 105, 225) 100%,
       rgb(128, 0, 128)
     );
     -webkit-background-clip: text;
@@ -39,7 +39,7 @@ body {
   100% {
     background: -webkit-linear-gradient(
       right,
-      rgb(236, 144, 144) 50%,
+      rgb(65, 105, 225) 50%,
       rgb(128, 0, 128)
     );
     -webkit-background-clip: text;
@@ -53,7 +53,7 @@ body {
   0% {
     background: -webkit-linear-gradient(
       right,
-      rgb(236, 144, 144) 50%,
+      rgb(65, 105, 225) 50%,
       rgb(128, 0, 128)
     );
     width: 50%;
@@ -62,7 +62,7 @@ body {
   100% {
     background: -webkit-linear-gradient(
       right,
-      rgb(236, 144, 144) 10%,
+      rgb(65, 105, 225) 10%,
       rgb(128, 0, 128)
     );
     width: 55%;
@@ -71,23 +71,23 @@ body {
 
 @keyframes animateBGCOLOR {
   0% {
-    padding: 3px 0px;
+    /* padding: px 0px; */
     color: white;
     font-weight: 600;
     background: -webkit-linear-gradient(
       right,
-      rgb(236, 144, 144) 50%,
+      rgb(65, 105, 225) 50%,
       rgb(128, 0, 128)
     );
   }
 
   100% {
-    padding: 4px 2px;
+    padding: initial 10px;
     color: white;
     font-weight: 600;
     background: -webkit-linear-gradient(
       right,
-      rgb(236, 144, 144) 10%,
+      rgb(65, 105, 225) 10%,
       rgb(128, 0, 128)
     );
   }
