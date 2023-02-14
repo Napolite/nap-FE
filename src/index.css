@@ -8,6 +8,11 @@
   src: url("../src/assets/fonts/SparTakus.ttf");
 }
 
+@font-face {
+  font-family: Noto;
+  src: url("../src/assets/fonts/NotoSans-Medium.ttf");
+}
+
 * {
   padding: 0;
   margin: 0;
