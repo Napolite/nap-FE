@@ -47,7 +47,7 @@
   display: flex;
   width: 60%;
   justify-content: space-around;
-  font-size: 20px;
+  font-size: 16px;
   color: rgb(37, 36, 36);
   font-family: Noto;
 }
@@ -60,7 +60,7 @@
 .connect-wallet {
   color: white;
   width: 50%;
-  font-size: 18px;
+  font-size: 16px;
   padding: 9px 0px;
   text-align: center;
   border-radius: 10px;
