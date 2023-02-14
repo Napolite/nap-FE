@@ -13,14 +13,14 @@ function App() {
   };
 
   return (
-    <>
+    <div>
       <div className="index">
         <Navbar connectWallet={connect} account={account} />
       </div>
       <div>
         <Home />
       </div>
-    </>
+    </div>
   );
 }
 

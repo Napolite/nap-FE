@@ -15,12 +15,21 @@
   box-sizing: border-box;
 }
 
+/* body {
+  background-image: url("/src/assets/images/istockphoto-1202855261-612x612.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+} */
+
+body {
+  background-color: rgba(0, 0, 0, 0.9);
+}
 @keyframes animateBG {
   0% {
     background: -webkit-linear-gradient(
       right,
       rgb(236, 144, 144) 100%,
-      rgba(25, 117, 236, 0.8)
+      rgb(128, 0, 128)
     );
     -webkit-background-clip: text;
     background-clip: text;
@@ -31,7 +40,7 @@
     background: -webkit-linear-gradient(
       right,
       rgb(236, 144, 144) 50%,
-      rgba(25, 117, 236, 0.8)
+      rgb(128, 0, 128)
     );
     -webkit-background-clip: text;
     background-clip: text;
@@ -45,7 +54,7 @@
     background: -webkit-linear-gradient(
       right,
       rgb(236, 144, 144) 50%,
-      rgba(25, 117, 236, 0.8)
+      rgb(128, 0, 128)
     );
     width: 50%;
   }
@@ -54,7 +63,7 @@
     background: -webkit-linear-gradient(
       right,
       rgb(236, 144, 144) 10%,
-      rgba(25, 117, 236, 0.8)
+      rgb(128, 0, 128)
     );
     width: 55%;
   }
@@ -68,7 +77,7 @@
     background: -webkit-linear-gradient(
       right,
       rgb(236, 144, 144) 50%,
-      rgba(25, 117, 236, 0.8)
+      rgb(128, 0, 128)
     );
   }
 
@@ -79,7 +88,7 @@
     background: -webkit-linear-gradient(
       right,
       rgb(236, 144, 144) 10%,
-      rgba(25, 117, 236, 0.8)
+      rgb(128, 0, 128)
     );
   }
 }
