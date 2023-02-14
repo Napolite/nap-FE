@@ -5,6 +5,7 @@
 
 .home-intro {
   display: flex;
+  background-color: blue;
 }
 .tabs {
   display: flex;
@@ -31,8 +32,12 @@
 
 .intro {
   display: block;
+  background-color: green;
 }
 
+.intro div:nth-child(1) {
+  background-color: red;
+}
 .title {
   display: block;
   font-size: 24px;
