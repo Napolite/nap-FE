@@ -8,11 +8,6 @@ import "./index.css";
 function Home() {
   return (
     <div className="home-root">
-      <div className="tabs">
-        <div>Intro</div>
-        <div>Bio</div>
-        <div>Experience</div>
-      </div>
       <div className="home-intro">
         <img src={avatar} />
         <div className="intro">

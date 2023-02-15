@@ -3,11 +3,13 @@
   color: white;
 }
 .navbar-root {
-  max-width: 100vw;
+  max-width: 95vw;
   height: 150px;
   display: flex;
   justify-content: space-between;
   align-items: center;
+  /* background-color: purple; */
+  margin: auto;
 }
 
 .navbar-root img {
