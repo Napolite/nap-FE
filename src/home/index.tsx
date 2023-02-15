@@ -12,9 +12,7 @@ function Home() {
         <img src={avatar} />
         <div>
           <div className="intro">
-            <div className="name">
-              <p>Okon Emmanuel</p>
-            </div>
+            <div className="name">Okon Emmanuel</div>
             <div className="profession">
               Frontend developer, Blockchain Developer, Web3 enthusiast
             </div>
