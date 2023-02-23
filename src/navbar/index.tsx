@@ -13,7 +13,7 @@ function Navbar({ connectWallet, account }: any) {
   };
 
   const handleMouseLeave = () => {
-    logoRef.current.style.animation = "animateBGRev 0.3s forwards";
+    logoRef.current.style.animation = "animateBGRevLogo 0.3s forwards";
   };
 
   return (

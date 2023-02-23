@@ -1,6 +1,6 @@
 * {
   cursor: default;
-  color: white;
+  color: rgb(173, 169, 169);
 }
 .navbar-root {
   max-width: 95vw;
@@ -40,6 +40,7 @@
 .logo-div div {
   width: 70%;
   font-family: Planet;
+  color: white;
   /* margin-left: 10px; */
 }
 /* .logo-div div:hover {
