@@ -1,4 +1,4 @@
-import React, { MutableRefObject, useRef } from "react";
+import React, { MutableRefObject, useRef, useState } from "react";
 import { avatar } from "@/assets";
 
 //css
@@ -6,6 +6,8 @@ import { avatar } from "@/assets";
 import "./index.css";
 
 function Home() {
+  const [state, setState] = useState({ activeTab: "Intro" });
+
   const name = useRef(null) as unknown as MutableRefObject<HTMLDivElement>;
 
   const handleMouseEnter = () => {
@@ -15,25 +17,28 @@ function Home() {
   const handleMouseLeave = () => {
     name.current.style.animation = "animateBGRev 0.3s forwards";
   };
+
   return (
     <div className="home-root">
       <div className="home-intro">
         <img src={avatar} />
         <div>
-          <div className="intro">
-            <div
-              className="name"
-              ref={name}
-              onMouseEnter={handleMouseEnter}
-              onMouseLeave={handleMouseLeave}
-            >
-              Okon Emmanuel
+          {state.activeTab === "Intro" && (
+            <div className="intro">
+              <div
+                className="name"
+                ref={name}
+                onMouseEnter={handleMouseEnter}
+                onMouseLeave={handleMouseLeave}
+              >
+                Okon Emmanuel
+              </div>
+              <div className="profession">
+                Frontend developer, Blockchain Developer, Web3 enthusiast
+              </div>
+              <div className="prof2">Basically, Beauty and the Blockchain</div>
             </div>
-            <div className="profession">
-              Frontend developer, Blockchain Developer, Web3 enthusiast
-            </div>
-            <div className="prof2">Basically, Beauty and the Blockchain</div>
-          </div>
+          )}
           <div className="bio">
             <div>Bio</div>
             <div>

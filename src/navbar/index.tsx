@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useRef, MutableRefObject } from "react";
 
 import { connectWallet } from "@/actions";
 import "./index.css";
@@ -6,12 +6,28 @@ import "./index.css";
 import { avatar } from "@/assets";
 
 function Navbar({ connectWallet, account }: any) {
+  const logoRef = useRef(null) as unknown as MutableRefObject<HTMLDivElement>;
+
+  const handleMouseEnter = () => {
+    logoRef.current.style.animation = "animateBG 0.3s forwards";
+  };
+
+  const handleMouseLeave = () => {
+    logoRef.current.style.animation = "animateBGRev 0.3s forwards";
+  };
+
   return (
     <>
       <div className="navbar-root">
         <div className="logo-div">
           <img src={avatar} />
-          <div>Napolite</div>
+          <div
+            onMouseEnter={handleMouseEnter}
+            onMouseLeave={handleMouseLeave}
+            ref={logoRef}
+          >
+            Napolite
+          </div>
         </div>
         <div className="navbar-links">
           <div>About</div>
