@@ -88,10 +88,10 @@
   font-family: Spatakus;
 }
 
-.name:hover {
-  animation: animateBG 0.3s forwards;
-}
-.profession {
+/* .name:hover {
+  /* animation: animateBG 0.3s forwards;
+} */
+*/ .profession {
   font-size: 16px;
   margin-top: 10px;
   font-family: Planet;

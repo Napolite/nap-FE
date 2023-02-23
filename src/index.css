@@ -54,6 +54,30 @@ body {
   }
 }
 
+@keyframes animateBGRev {
+  0% {
+    background: -webkit-linear-gradient(
+      right,
+      rgb(65, 105, 225) 50%,
+      rgb(128, 0, 128)
+    );
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    letter-spacing: 5px;
+  }
+  100% {
+    background: -webkit-linear-gradient(
+      right,
+      rgb(65, 105, 225) 100%,
+      rgb(128, 0, 128)
+    );
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+}
+
 @keyframes connect-wallet {
   0% {
     background: -webkit-linear-gradient(
