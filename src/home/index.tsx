@@ -41,19 +41,22 @@ function Home() {
           )}
           {state.activeTab === "Bio" && (
             <div className="bio">
-              <div>Bio</div>
-              <div>
-                I am a frontend developer majoring with the React Ecosystem and
-                web3.js for Web and mobile application development. With 2 years
-                professional experience, I have worked to carve out and fine
-                tune a programming style that allows me replicate a UI design
-                into a functional application, following the best UX
+              <div className="title">Bio</div>
+              <div className="note">
+                I am a <p> frontend developer </p>majoring with the
+                <p> React Ecosystem </p> and
+                <p> web3.js </p> for Web and mobile application development.
+                With 2 years professional experience, I have worked to carve out
+                and fine tune a programming style that allows me replicate a UI
+                design into a functional application, following the best UX
                 philosophies and guidelines for a great web and mobile
                 experience. I am also very invested in the blockchain Ecosystem,
                 and I am currently learning to develop applications for the
-                Ethereum Virtual Machine and other EVM compatible networks with
-                Solidity, and the Near Virtual Machine with Rust(in view) and
-                Assemblyscript.
+                <p> Ethereum Virtual Machine </p> and other EVM compatible
+                networks with
+                <p> Solidity </p>, and the Near Virtual Machine with Rust(in
+                view) and
+                <p> Assemblyscript </p>.
               </div>
             </div>
           )}
