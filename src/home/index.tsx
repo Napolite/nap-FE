@@ -6,7 +6,7 @@ import { avatar } from "@/assets";
 import "./index.css";
 
 function Home() {
-  const [state, setState] = useState({ activeTab: "Bio" });
+  const [state, setState] = useState({ activeTab: "Intro" });
 
   const name = useRef(null) as unknown as MutableRefObject<HTMLDivElement>;
 
@@ -40,8 +40,8 @@ function Home() {
             </div>
           )}
           {state.activeTab === "Bio" && (
-            <div className="bio">
-              <div className="title">Bio</div>
+            <div className="bio-main">
+              <div className="name">Hello,</div>
               <div className="note">
                 I am a <p> frontend developer </p>majoring with the
                 <p> React Ecosystem </p> and
@@ -73,8 +73,12 @@ function Home() {
             </div>
           </div>
           <div className="tabs">
-            <div>Intro</div>
-            <div>Bio</div>
+            <div onClick={() => setState({ ...state, activeTab: "Intro" })}>
+              Intro
+            </div>
+            <div onClick={() => setState({ ...state, activeTab: "Bio" })}>
+              Bio
+            </div>
             <div>Experience</div>
           </div>
         </div>
