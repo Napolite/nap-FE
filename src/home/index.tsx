@@ -60,18 +60,23 @@ function Home() {
               </div>
             </div>
           )}
-          <div className="experience">
-            <div>Professional Experience</div>
-            <div>
-              I have worked in DeFi, EdTech, and Logistics Spanning a 2+ years
-              career as a fronened developer and web3 engineer for several
-              products, Including a DEX pricing oracle querying more than 10
-              dexes, and the DAPP of this ecosystem
+          {state.activeTab === "Experience" && (
+            <div className="experience">
+              <div>Professional Experience</div>
+              <div>
+                I have worked in DeFi, EdTech, and Logistics Spanning a 2+ years
+                career as a fronened developer and web3 engineer for several
+                products, Including a DEX pricing oracle querying more than 10
+                dexes, and the DAPP of this ecosystem
+              </div>
+              <div>
+                Download a copy of my resume{" "}
+                <a target="blank" href="#">
+                  here
+                </a>
+              </div>
             </div>
-            <div>
-              Download a copy of my resume <a>here</a>
-            </div>
-          </div>
+          )}
           <div className="tabs">
             <div onClick={() => setState({ ...state, activeTab: "Intro" })}>
               Intro
@@ -79,7 +84,11 @@ function Home() {
             <div onClick={() => setState({ ...state, activeTab: "Bio" })}>
               Bio
             </div>
-            <div>Experience</div>
+            <div
+              onClick={() => setState({ ...state, activeTab: "Experience" })}
+            >
+              Experience
+            </div>
           </div>
         </div>
       </div>

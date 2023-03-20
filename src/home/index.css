@@ -38,7 +38,9 @@
   justify-content: space-between;
   align-items: center;
   /* background-color: green; */
-  margin-top: 50px;
+  /* margin-top: 70; */
+  /* position: absolute;
+  top: 80vh; */
 }
 
 .tabs div {
