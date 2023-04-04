@@ -36,7 +36,9 @@ function Home() {
               <div className="profession">
                 Frontend developer, Blockchain Developer, Web3 enthusiast
               </div>
-              <div className="prof2">Basically, Beauty and the Blockchain</div>
+              <div className="prof2">
+                Basically,<p> Beauty and the Blockchain</p>
+              </div>
             </div>
           )}
           {state.activeTab === "Bio" && (

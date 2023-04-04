@@ -13,7 +13,6 @@
   width: 90%;
   height: 70vh;
   margin: auto;
-  /* background-color: blue; */
   place-content: center;
 }
 
@@ -28,6 +27,9 @@
 .home-intro > div:nth-child(2) {
   /* background-color: red; */
   width: 66%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
 }
 .tabs {
   display: flex;
@@ -37,10 +39,6 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  /* background-color: green; */
-  /* margin-top: 70; */
-  /* position: absolute;
-  top: 80vh; */
 }
 
 .tabs div {
@@ -56,9 +54,11 @@
 }
 
 .tabs div:hover {
-  animation: animateBGCOLOR 0.1s forwards;
+  animation: animateBGCOLOR 0.8s forwards;
 }
 
+/* .active {
+} */
 .intro {
   display: block;
   width: 80%;
@@ -104,8 +104,12 @@
 .prof2 {
   font-size: 16px;
   margin-top: 10px;
-  font-family: Planet;
   text-align: left;
+}
+
+.prof2 > p {
+  font-family: Planet;
+  display: inline;
 }
 
 .bio-main .note p {
