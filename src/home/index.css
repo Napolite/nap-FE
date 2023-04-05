@@ -44,11 +44,12 @@
 .tabs div {
   border: 1px solid rgb(209, 209, 209);
   width: 100px;
-  height: fit-content;
-  text-align: center;
-  padding: 3px 0px;
+  height: 33.5px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
   border-radius: 10px;
-  font-size: 12px;
+  font-size: 14px;
   font-family: Noto;
   font-weight: 700;
 }
@@ -63,7 +64,8 @@
   display: block;
   width: 80%;
   height: fit-content;
-  margin-top: 120px;
+  margin-top: 150px;
+  /* display: none; */
   /* background-color: red; */
 }
 
@@ -93,9 +95,9 @@
 /* .name:hover {
   /* animation: animateBG 0.3s forwards;
 } */
-*/ .profession {
+.profession {
   font-size: 16px;
-  margin-top: 10px;
+  margin-top: 30px;
   font-family: Planet;
   margin-bottom: 30px;
   text-align: left;
@@ -103,7 +105,7 @@
 
 .prof2 {
   font-size: 16px;
-  margin-top: 10px;
+  margin-top: 30px;
   text-align: left;
 }
 
