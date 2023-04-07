@@ -86,10 +86,10 @@ function Home() {
             <div onClick={() => setState({ ...state, activeTab: "Bio" })}>
               Bio
             </div>
-            <div
-              onClick={() => setState({ ...state, activeTab: "Experience" })}
-            >
-              Experience
+            <div>
+              <a target="_blank" href="/Okon_Emmanuel_Israel.pdf">
+                Resume
+              </a>
             </div>
           </div>
         </div>
