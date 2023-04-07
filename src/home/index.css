@@ -58,8 +58,13 @@
   animation: animateBGCOLOR 0.8s forwards;
 }
 
-/* .active {
-} */
+.home-root .active {
+  background: -webkit-linear-gradient(
+    right,
+    rgb(65, 105, 225) 10%,
+    rgb(128, 0, 128)
+  );
+}
 .intro {
   display: block;
   width: 80%;

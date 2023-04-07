@@ -80,10 +80,16 @@ function Home() {
             </div>
           )}
           <div className="tabs">
-            <div onClick={() => setState({ ...state, activeTab: "Intro" })}>
+            <div
+              onClick={() => setState({ ...state, activeTab: "Intro" })}
+              className={`${state.activeTab === "Intro" && "active"}`}
+            >
               Intro
             </div>
-            <div onClick={() => setState({ ...state, activeTab: "Bio" })}>
+            <div
+              onClick={() => setState({ ...state, activeTab: "Bio" })}
+              className={`${state.activeTab === "Bio" && "active"}`}
+            >
               Bio
             </div>
             <div>
