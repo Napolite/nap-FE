@@ -1,4 +1,4 @@
-import React, { MutableRefObject, useRef, useState } from "react";
+import React, { MutableRefObject, useEffect, useRef, useState } from "react";
 import { avatar } from "@/assets";
 
 //css
@@ -9,7 +9,7 @@ function Home() {
   const [state, setState] = useState({ activeTab: "Intro" });
 
   const name = useRef(null) as unknown as MutableRefObject<HTMLDivElement>;
-
+  const content = useRef(null) as unknown as MutableRefObject<HTMLDivElement>;
   const handleMouseEnter = () => {
     name.current.style.animation = "animateBG 0.3s forwards";
   };
@@ -17,6 +17,38 @@ function Home() {
   const handleMouseLeave = () => {
     name.current.style.animation = "animateBGRev 0.3s forwards";
   };
+
+  const handleTypeWriting = () => {
+    var messageArray = [
+      "Frontend Developer,",
+      "Blockchain Developer,",
+      "Web3 Enthusiast.",
+    ];
+    var textPos = 0;
+    var speed = 100;
+    var contentText = "";
+    var i = 0;
+    var typeWrite = () => {
+      contentText = messageArray[i].substring(0, textPos);
+      content.current.innerHTML = contentText + "<span>\u25ae<span>";
+
+      if (textPos++ !== messageArray[i].length) {
+        setTimeout(typeWrite, speed);
+      } else {
+        if (i < messageArray.length) {
+          textPos = 0;
+          i++;
+          setTimeout(typeWrite, speed);
+        } else console.log();
+      }
+    };
+
+    typeWrite();
+  };
+
+  useEffect(() => {
+    handleTypeWriting();
+  });
 
   return (
     <div className="home-root">
@@ -33,9 +65,7 @@ function Home() {
               >
                 Okon Emmanuel
               </div>
-              <div className="profession">
-                Frontend developer, Blockchain Developer, Web3 enthusiast
-              </div>
+              <div className="profession" ref={content}></div>
               <div className="prof2">
                 Basically,<p> Beauty and the Blockchain</p>
               </div>
