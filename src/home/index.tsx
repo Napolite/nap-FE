@@ -10,6 +10,9 @@ function Home() {
 
   const name = useRef(null) as unknown as MutableRefObject<HTMLDivElement>;
   const content = useRef(null) as unknown as MutableRefObject<HTMLDivElement>;
+  const lowerContent = useRef(
+    null
+  ) as unknown as MutableRefObject<HTMLDivElement>;
   const handleMouseEnter = () => {
     name.current.style.animation = "animateBG 0.3s forwards";
   };
@@ -30,7 +33,8 @@ function Home() {
     var contentText = "";
     var typeWrite = () => {
       contentText = contentText + messageArray[i].charAt(textPos);
-      content.current.innerHTML = contentText + "<span>\u25ae<span>";
+      content.current.innerHTML =
+        contentText + "<span class='caret'>\u25ae<span>";
 
       if (textPos++ !== messageArray[i].length) {
         setTimeout(typeWrite, speed);
@@ -39,6 +43,11 @@ function Home() {
           textPos = 0;
           i++;
           setTimeout(() => setTimeout(typeWrite, speed), 500);
+        } else {
+          setTimeout(
+            () => (content.current.children[0].className = "caret-null"),
+            3000
+          );
         }
       }
     };
@@ -46,8 +55,41 @@ function Home() {
     typeWrite();
   };
 
+  const handleLowerLevel = () => {
+    setTimeout(() => {
+      var messageArray = ["", "Basically, ", "Beauty and the Blockchain."];
+      var textPos = 0;
+      var speed = 100;
+      var i = 0;
+      var contentText = "";
+      var typeWrite = () => {
+        contentText = contentText + messageArray[i].charAt(textPos);
+        lowerContent.current.innerHTML =
+          contentText + "<span class='caret'>\u25ae<span>";
+
+        if (textPos++ !== messageArray[i].length) {
+          setTimeout(typeWrite, speed);
+        } else {
+          if (i < messageArray.length - 1) {
+            textPos = 0;
+            i++;
+            setTimeout(() => setTimeout(typeWrite, speed), 500);
+          } else {
+            setTimeout(
+              () => (lowerContent.current.children[0].className = "caret-null"),
+              3000
+            );
+          }
+        }
+      };
+
+      typeWrite();
+    }, 10000);
+  };
+
   useEffect(() => {
     handleTypeWriting();
+    handleLowerLevel();
   });
 
   return (
@@ -66,9 +108,7 @@ function Home() {
                 Okon Emmanuel
               </div>
               <div className="profession" ref={content}></div>
-              <div className="prof2">
-                Basically,<p> Beauty and the Blockchain</p>
-              </div>
+              <div className="prof2" ref={lowerContent}></div>
             </div>
           )}
           {state.activeTab === "Bio" && (

@@ -109,15 +109,29 @@
   text-align: left;
 }
 
+.caret {
+  color: orange;
+  animation: blink-caret 0.75s step-end infinite;
+}
+
+.caret-null {
+  color: transparent;
+}
+@keyframes blink-caret {
+  from,
+  to {
+    color: orange;
+  }
+  50% {
+    color: transparent;
+  }
+}
+
 .prof2 {
   font-size: 16px;
   margin-top: 30px;
   text-align: left;
-}
-
-.prof2 > p {
   font-family: Planet;
-  display: inline;
 }
 
 .bio-main .note p {
