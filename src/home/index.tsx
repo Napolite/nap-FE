@@ -20,26 +20,26 @@ function Home() {
 
   const handleTypeWriting = () => {
     var messageArray = [
-      "Frontend Developer,",
-      "Blockchain Developer,",
+      "Frontend Developer, ",
+      "Blockchain Developer, ",
       "Web3 Enthusiast.",
     ];
     var textPos = 0;
     var speed = 100;
-    var contentText = "";
     var i = 0;
+    var contentText = "";
     var typeWrite = () => {
-      contentText = messageArray[i].substring(0, textPos);
+      contentText = contentText + messageArray[i].charAt(textPos);
       content.current.innerHTML = contentText + "<span>\u25ae<span>";
 
       if (textPos++ !== messageArray[i].length) {
         setTimeout(typeWrite, speed);
       } else {
-        if (i < messageArray.length) {
+        if (i < messageArray.length - 1) {
           textPos = 0;
           i++;
-          setTimeout(typeWrite, speed);
-        } else console.log();
+          setTimeout(() => setTimeout(typeWrite, speed), 500);
+        }
       }
     };
 
